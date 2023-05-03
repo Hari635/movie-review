@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  categoryList:String[]=[];
+  selectedCategory:String="Category";
+
+  constructor() {
+   }
+
 
   ngOnInit(): void {
+    this.categoryList.push("IMDb");
+    this.categoryList.push("Show & Series");
+    this.categoryList.push("Netflix");
+  }
+
+  categoryClick(category:String):void{
+    this.selectedCategory=category;
   }
 
 }
