@@ -1,30 +1,35 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid ">
-    <div class="container-fluid">
-      <span class="navbar-brand">Entertainment</span>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Favourite</a>
-          </li>
-          <li class="nav-item dropdown">
-            <select class="form-select" aria-label="Default select example">
-                <option class="dropdown-item" selected>Category</option>
-                <option class="dropdown-item" value="1">IMDb</option>
-                <option class="dropdown-item" value="2">Show & Series</option>
-                <option class="dropdown-item" value="3">NetflixNetflix</option>
-              </select>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" tabindex="-1">Login/Signup</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+<header class="p-3 text-bg-dark bg-dark">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <span class="navbar-brand fs-1">Entertainment</span>
+      </a>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link fs-5 text-white">Home</a></li>
+        <li><a href="#" class="nav-link fs-5 text-white">Favourite</a></li>
+        <li class="nav-item dropdown fs-5">
+          <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">IMDb</a></li>
+            <li><a class="dropdown-item" href="#">Show & Series</a></li>
+            <li><a class="dropdown-item" href="#">Netflix</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+          aria-label="Search" spellcheck="false" data-ms-editor="true">
+      </form>
+
+      <div class="text-end">
+        <button type="button" class="btn btn-outline-light me-2">Login</button>
+        <button type="button" class="btn btn-warning">Sign-up</button>
       </div>
     </div>
-  </nav>
+  </div>
+</header>
