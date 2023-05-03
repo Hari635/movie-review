@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
