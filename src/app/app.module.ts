@@ -4,7 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
-import { LoginsignupModule } from "../app/modules/loginsignup/loginsignup.module";
+import { UserModule } from "./modules/loginsignup/user.module";
+import { AppRoutingModule } from './app-routing.module';
+import { HomeModuleModule } from './modules/home-module/home-module.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +18,10 @@ import { LoginsignupModule } from "../app/modules/loginsignup/loginsignup.module
   imports: [
     BrowserModule,
     FormsModule,
-    LoginsignupModule
+    UserModule,
+    AppRoutingModule,
+    HomeModuleModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
