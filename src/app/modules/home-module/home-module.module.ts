@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeScreenComponent } from './home-screen/home-screen.component';
 import { FavouriteScreenComponent } from './favourite-screen/favourite-screen.component';
 import { HomeRoutingModule } from './home-routing.module';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -13,7 +14,8 @@ import { HomeRoutingModule } from './home-routing.module';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    MatTabsModule
   ],
 })
 export class HomeModuleModule { }
