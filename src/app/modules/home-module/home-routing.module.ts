@@ -6,7 +6,8 @@ import { HomeScreenComponent } from "./home-screen/home-screen.component";
 const routes:Routes=[
     {
         path:"",
-        component:HomeScreenComponent
+        component:HomeScreenComponent,
+        
     },
     {
         path:"favourite",
